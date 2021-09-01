@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/clove20123/meet.git/static/css/main.a617e044.chunk.css",
+    "main.js": "/clove20123/meet.git/static/js/main.b1472df6.chunk.js",
+    "main.js.map": "/clove20123/meet.git/static/js/main.b1472df6.chunk.js.map",
+    "runtime-main.js": "/clove20123/meet.git/static/js/runtime-main.2411af50.js",
+    "runtime-main.js.map": "/clove20123/meet.git/static/js/runtime-main.2411af50.js.map",
+    "static/js/2.00d510ba.chunk.js": "/clove20123/meet.git/static/js/2.00d510ba.chunk.js",
+    "static/js/2.00d510ba.chunk.js.map": "/clove20123/meet.git/static/js/2.00d510ba.chunk.js.map",
+    "static/js/3.0f9b6292.chunk.js": "/clove20123/meet.git/static/js/3.0f9b6292.chunk.js",
+    "static/js/3.0f9b6292.chunk.js.map": "/clove20123/meet.git/static/js/3.0f9b6292.chunk.js.map",
+    "index.html": "/clove20123/meet.git/index.html",
+    "service-worker.js": "/clove20123/meet.git/service-worker.js",
+    "service-worker.js.map": "/clove20123/meet.git/service-worker.js.map",
+    "static/css/main.a617e044.chunk.css.map": "/clove20123/meet.git/static/css/main.a617e044.chunk.css.map",
+    "static/js/2.00d510ba.chunk.js.LICENSE.txt": "/clove20123/meet.git/static/js/2.00d510ba.chunk.js.LICENSE.txt",
+    "static/media/logo.103b5fa1.svg": "/clove20123/meet.git/static/media/logo.103b5fa1.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2411af50.js",
+    "static/js/2.00d510ba.chunk.js",
+    "static/css/main.a617e044.chunk.css",
+    "static/js/main.b1472df6.chunk.js"
+  ]
+}
