@@ -81,12 +81,12 @@ describe('<App /> integration', () => {
   test('App should update number of events displayed to match number selected by the user', async () => {
     const AppWrapper = mount(<App />);
     const NumberOfEventsWrapper = AppWrapper.find(NumberOfEvents);
-    const eventObject = { target: { value: 4 }}; 
-    NumberOfEventsWrapper.find('.numberOfEvents').simulate('change', eventObject);
-    const newNumber = NumberOfEventsWrapper.state().eventsNumber;
-    expect(newNumber).toBe(4);
+    const eventObject = { target: { value: "4" }}; 
+    NumberOfEventsWrapper.find('.EventsNumber').simulate('change', eventObject);
+    const newNumber = NumberOfEventsWrapper.state('numberOfEvents');
+    expect(newNumber).toBe("4");
     await getEvents();
-    expect(AppWrapper.state('events')).toHaveLength(newNumber);
+    expect(AppWrapper.state('events')).toHaveLength(parseInt(newNumber));
     AppWrapper.unmount();
   });
 
