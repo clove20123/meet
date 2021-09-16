@@ -14,7 +14,7 @@ class NumberOfEvents extends Component {
     this.setState ({
       numberOfEvents: number
     });
-    this.props.updateNumberOfEvents(number);
+    this.props.updateEvents(number);
   };
 
   render () {
