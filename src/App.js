@@ -11,7 +11,7 @@ class App extends Component {
   state = {
     events: [],
     locations: [],
-    numberOfEvents: 12
+    numberOfEvents: 32
   }
 
   componentDidMount() {

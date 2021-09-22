@@ -13,9 +13,7 @@ describe("<NumberOfEvents /> component", () => {
   });
 
   test("show 32 events by default", () => {
-    expect(NumberOfEventsWrapper.find(".EventsNumber").prop("value")).toEqual(
-      32
-    );
+    expect(NumberOfEventsWrapper.find(".EventsNumber").prop("value")).toEqual(32);
   });
 
   test("renders text input correctly", () => {

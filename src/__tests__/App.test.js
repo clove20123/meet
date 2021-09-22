@@ -69,7 +69,7 @@ describe('<App /> integration', () => {
 
   test('App should display only 12 events when first rendered', async () => { 
     const AppWrapper = mount(<App />);
-    expect(AppWrapper.state('numberOfEvents')).toBe(12);
+    expect(AppWrapper.state('numberOfEvents')).toBe(32);
     expect(AppWrapper.state('events')).toEqual([]);
     const testSlicedEvents = mockData.slice(0,12);
     await getEvents();
