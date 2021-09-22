@@ -50,7 +50,7 @@ defineFeature(feature, (test) => {
     given("the event info is shown", () => {
       EventWrapper = shallow(<Event event={mockData[1]} />);
       EventWrapper.setState({
-        show: true,
+        showHideDetails: true,
       });
       expect(EventWrapper.find(".event-details")).toHaveLength(1);
     });
