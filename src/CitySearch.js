@@ -40,7 +40,7 @@ class CitySearch extends Component {
   render() {
     return (
       <div className="CitySearch">
-        <InfoAlert text={this.state.infoText}/>
+
         <input
           type="text"
           className="city"
@@ -49,6 +49,7 @@ class CitySearch extends Component {
           onFocus={() => { this.setState({ showSuggestions: true }) }}
       />
 <ul className="suggestions"  style={this.state.showSuggestions ? {}: { display: 'none' }}>
+<InfoAlert text={this.state.infoText}/>
   {this.state.suggestions.map((suggestion) => (
     <li
       key={suggestion}
