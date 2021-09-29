@@ -5,13 +5,15 @@ import EventList from './EventList';
 import CitySearch from './CitySearch';
 import NumberOfEvents from './NumberOfEvents';
 import { extractLocations, getEvents } from './api';
+import { NetworkAlert } from './Alert';
 
 
 class App extends Component {
   state = {
     events: [],
     locations: [],
-    numberOfEvents: 32
+    numberOfEvents: 32,
+    networkText: ''
   }
 
   componentDidMount() {
@@ -20,6 +22,16 @@ class App extends Component {
       if (this.mounted) {
         const slicedEvents = events.slice(0, this.state.numberOfEvents);
         this.setState({ events: slicedEvents, locations: extractLocations(events) });
+      }
+
+      if (!navigator.onLine) {
+        this.setState({
+          networkText: "No internet connection. Previously loaded events will display."
+        });
+      } else {
+        this.setState({
+          networkText: '',
+        });
       }
     });
   }
@@ -52,6 +64,7 @@ class App extends Component {
       <div className="App">
         <CitySearch locations={this.state.locations} updateEvents={this.updateEvents} />
         <NumberOfEvents updateNumberOfEvents={this.updateNumberOfEvents} numberOfEvents={this.state.numberOfEvents} />
+        <NetworkAlert text={this.state.networkText} className="NetworkAlert"/>
         <EventList events={this.state.events} />
       </div>
     );
