@@ -8,6 +8,7 @@ import { NetworkAlert } from './Alert';
 import WelcomeScreen from './WelcomeScreen';
 import { getEvents, extractLocations, checkToken, getAccessToken } from './api';
 import {  ScatterChart, Scatter, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
+import EventGenre from './EventGenre';
 
 class App extends Component {
   state = {
@@ -95,6 +96,7 @@ class App extends Component {
         <NetworkAlert text={this.state.networkText} className="NetworkAlert"/>
         <h4>Events in each city</h4>
         <div className="data-vis-wrapper">
+        <EventGenre events={this.state.events} />
         <ResponsiveContainer height={400} >
          <ScatterChart
 
