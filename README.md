@@ -4,6 +4,10 @@
 
 This is a serverless progressive web application with React, using a test-driven development technique. This application uses Google Calendar API to fetch evtns.
 
+## Live demo link
+
+[demo](https://clove20123.github.io/meet/)
+
 ## TDD approach and Test Scenarios
 
 ### FEATURE 1: FILTER EVENTS BY CITY
