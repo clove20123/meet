@@ -1,5 +1,7 @@
 # Meet App
 
+![Meet App interface](images/meet-app1.png)
+
 This is a serverless progressive web application with React, using a test-driven development technique. This application uses Google Calendar API to fetch evtns.
 
 ## TDD approach and Test Scenarios
